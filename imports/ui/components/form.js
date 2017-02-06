@@ -1,9 +1,9 @@
 import './form.html';
 
-import { Entries } from '/imports/api/entries';
+import { Records } from '/imports/api/records';
 
 Template.form.events({
-  'submit .new-entry'(event, instance) {
+  'submit .new-record'(event, instance) {
     // Prevent default browser form submit
     event.preventDefault();
 
@@ -28,7 +28,7 @@ Template.form.events({
     if (validMember(member2)) { parties.push(member2); }
     if (validMember(member3)) { parties.push(member3); }
 
-    Entries.insert({ parties });
+    Records.insert({ parties });
 
     // Clear form
     event.target.member_1_userId.value = '';

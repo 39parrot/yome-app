@@ -1,1 +1,1 @@
-import '/imports/api/entries';
+import '/imports/api/records';
