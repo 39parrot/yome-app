@@ -1,5 +1,11 @@
 <template name="balance">
   <div>
-    balance
+    <ul>
+      {{#each balances}}
+        <li>
+          creditor: {{creditor}}, debitor: {{debitor}}, sum: {{sum}}
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </template>
