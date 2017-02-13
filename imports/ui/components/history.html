@@ -1,0 +1,11 @@
+<template name="history">
+  <h3>Recent records</h3>
+  <ul>
+    {{#each records}}
+      <li>
+        creditor: {{creditor}}, debitor: {{debitor}}, sum: {{sum}}
+        <span class="todo">differentiate between types yome and split</span>
+      </li>
+    {{/each}}
+  </ul>
+</template>

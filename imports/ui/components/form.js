@@ -1,4 +1,6 @@
 import './form.html';
+import './history.html';
+import './history';
 
 import { Records } from '/imports/api/records';
 

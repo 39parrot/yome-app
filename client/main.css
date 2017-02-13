@@ -1,1 +1,23 @@
 /* CSS declarations go here */
+.mock::after {
+  content: " mock";
+  vertical-align: super;
+  font-size: smaller;
+  color: salmon;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.todo {
+  color: lightgrey;
+  font-size: smaller;
+  font-style: italic;
+}
+.todo::before {
+  content: "todo: ";
+  vertical-align: sub;
+  font-size: smaller;
+  color: green;
+  font-style: italic;
+  font-weight: bolder;
+}
